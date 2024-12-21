@@ -1,0 +1,23 @@
+$TTL 86400
+@ IN SOA dns.tp3.b2. admin.tp3.b2. (
+    2019061800 ;Serial
+    3600 ;Refresh
+    1800 ;Retry
+    604800 ;Expire
+    86400 ;Minimum TTL
+)
+
+; Infos sur le serveur DNS lui même (NS = NameServer)
+@ IN NS dns.tp3.b2.
+
+; Enregistrements DNS pour faire correspondre des noms à des IPs
+; on met quelques faux noms histoire de nourrir un peu le le fichier
+web         IN A 10.3.3.3
+supersite   IN A 10.3.3.3
+web2        IN A 10.3.3.4
+coolsite    IN A 10.3.3.4
+web3        IN A 10.3.3.5
+prout       IN A 10.3.3.5
+web4        IN A 10.3.3.6
+meow        IN A 10.3.3.6
+dns         IN A 10.3.3.3
