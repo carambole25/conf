@@ -1,0 +1,17 @@
+$TTL 86400
+@ IN SOA dns.tp3.b2. admin.tp3.b2. (
+    2019061800 ;Serial
+    3600 ;Refresh
+    1800 ;Retry
+    604800 ;Expire
+    86400 ;Minimum TTL
+)
+
+; Infos sur le serveur DNS lui même (NS = NameServer)
+@ IN NS dns.tp3.b2.
+
+; Reverse lookup
+3 IN PTR web.tp3.b2.
+4 IN PTR web2.tp3.b2.
+5 IN PTR web3.tp3.b2.
+6 IN PTR web4.tp3.b2.
